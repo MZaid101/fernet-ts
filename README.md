@@ -88,7 +88,6 @@ pip install cryptography
 npm test src/compat.test.ts
 ```
 
-## License
 
 ## License
 
