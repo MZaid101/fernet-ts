@@ -1,0 +1,19 @@
+{
+  "name": "fernet-ts",
+  "version": "1.0.0",
+  "description": "100% Python-compatible Fernet encryption library",
+  "main": "dist/fernet.js",
+  "type": "module",
+  "scripts": {
+    "test": "vitest",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.1.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
+}
