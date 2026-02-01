@@ -22,6 +22,21 @@ npm install fernet-ts
 
 ## Usage
 
+### Key Generation
+
+You can generate a valid key using the `crypto` module in Node.js:
+
+```typescript
+import { randomBytes } from 'node:crypto';
+
+// Generate 32 bytes and encode as URL-safe Base64
+const key = randomBytes(32).toString('base64')
+  .replace(/\+/g, '-')
+  .replace(/\//g, '_');
+
+console.log(key); // e.g. cw_0x689RpI-jtRR7oE8h_eQsKImvJapLeSbXpwF4e4=
+```
+
 ### Basic Encryption & Decryption
 
 ```typescript
@@ -75,4 +90,8 @@ npm test src/compat.test.ts
 
 ## License
 
-ISC
+## License
+
+This project is licensed under the ISC License - see the [LICENSE](LICENSE) file for details.
+
+Copyright (c) 2026 Zaid Aslam
